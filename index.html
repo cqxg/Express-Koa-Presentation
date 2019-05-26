@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./reveal.js-master/css/reset.css">
+    <link rel="stylesheet" href="./reveal.js-master/css/reveal.css">
+    <link rel="stylesheet" href="./reveal.js-master/css/theme/white.css">
+    <link rel="stylesheet" href="./reveal.js-master/lib/css/monokai.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Presentation</title>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="slide1">
+                <div class="slide1-wrapper">
+                    <div class="node">
+                        <img src="./assets/nodejsCopy.png" alt="">
+                    </div>
+                    <div class="frame">
+                        <img src="./assets/Expressjs.png" alt="">
+                        <img src="./assets/koaJSPrew.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <section class="slide2">
+                    <img src="./assets/NodeJS.png" alt="">
+                </section>
+                <section class="slide3">
+                    <div class="slide-container3">
+                        <div class="text-container">
+                            <h2>What is node.js?</h2>
+                            <h6>Node.js developed by Ryan Dahl in 2009 after two years of experimenting on creating
+                                webserver components.​​​​</h6>
+                            <div class="what-node">
+                                <tr>
+                                    <li>event-oriented platform​</li>
+                                    <li>used to create web applications</li>
+                                    <li>provides the ability to use JavaScript on the server side</li>
+                                </tr>
+                            </div>
+                        </div>
+                        <div class="img-container">
+                            <img src="./assets/Ryan_Dahl1.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="slide4">
+                    <h3>This might look like a simple http server example on Node.js.</h3>
+                    <img src="./assets/PureNode.png" alt="">
+                    <p><strong>requestHandler:</strong> this function will be called every time a request comes to the
+                        server. If you
+                        open
+                        localhost: 3000 in your browser, two messages will appear in the console.</p>
+                    <p><strong>if (err): error handling:</strong> if the port is already busy or there are any other
+                        reasons why the
+                        server
+                        cannot be started, we will receive a notification about it.</p>
+                </section>
+            </section>
+            <section>
+                <section class="slide5">
+                    <div class="slide-container5">
+                        <img src="./assets/Expressjs5.png" alt="">
+                        <img src="./assets/ForExpree.png" alt="">
+                    </div>
+                </section>
+                <section class="slide6">
+                    <h3>for example:</h3>
+                    <img src="./assets/Express.png" alt="">
+                    <p>The biggest difference you can notice here is that Express gives you a router by default. You do
+                        not
+                        need to manually parse the URL to decide what to do, instead you define the application routing
+                        using app.get, app.post, app.put and so on, and they are already translated into the
+                        corresponding
+                        HTTP requests.</p>
+                </section>
+                <section class="slide7">
+                    <h3>one more example</h3>
+                    <h4>Middleware </h4>
+                    <p>Middleware - intermediate processor</p>
+                    <p>You may think of intermediate handlers as Unix pipelines, but for HTTP requests</p>
+                    <img src="./assets/0_yXhrC1j6aou0S0yA.png" alt="">
+                    <p>On the diagram, you can see how the request goes through the conditional Express application. It
+                        passes through three intermediate handlers. Each handler can change this request, and then,
+                        based on
+                        your business logic, the third middleware will send a response, or the request will go to the
+                        handler of the corresponding route.</p>
+                </section>
+                <section class="slide8">
+                    <img class="ex-img" src="./assets/Expressjs.png" alt="">
+                    <div class="slide8-wraper">
+                        <div class="slide8-pros">
+                            <tr>
+                                <h3>PROS:</h3>
+                                <li>simplicity</li>
+                                <li>flexibility</li>
+                                <li>good scalability</li>
+                                <li>developed community</li>
+                                <li>detailed documentation</li>
+                                <li>wide range of plugins</li>
+                            </tr>
+                        </div>
+                        <div class="slide8-cons">
+                            <tr>
+                                <h3>CONS:</h3>
+                                <li>large amount of handmade</li>
+                                <li>uses outdated function callbacks approach</li>
+                            </tr>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section>
+                <section class="slide9">
+                    <h3>Jump to...</h3>
+                    <img src="./assets/koaJS.png" alt="">
+                </section>
+                <section class="slide10">
+                    <p>Koa was created by the development team, as a variant of the express framework of the new
+                        generation.</p>
+                    <p>This improved version was developed to create web applications and APIs with enhanced
+                        performance.</p>
+                    <p>Accordingly, the creators sought to take into account all the shortcomings of the predecessor and
+                        make it more modern and convenient to use.</p>
+                </section>
+                <section class="slide11">
+                    <h3>A typical example of a simple koa.js server</h3>
+                    <img src="./assets/Koa.png" alt="">
+                    <p>Koa has almost the same functionality and surpasses Express in ease.</p>
+                </section>
+                <section class="slide12">
+                    <img src="./assets/koaJS2.png" alt="">
+                    <div class="slide12-wraper">
+                        <div class="slide12-pros">
+                            <tr>
+                                <h3>PROS:</h3>
+                                <li>light</li>
+                                <li>flexible</li>
+                                <li>fast</li>
+                                <li>ES6 generators</li>
+                                <li>better customization</li>
+                            </tr>
+                        </div>
+                        <div class="slide12-cons">
+                            <tr>
+                                <h3>CONS:</h3>
+                                <li>insufficient community support</li>
+                            </tr>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="slide13">
+                <h3>CONCLUSION</h3>
+                <p><strong>Express.js is suitable for:</strong></p>
+                <p>novice programmers who focus on professional growth in Node JS;
+                    large projects involving customization;
+                    cases where long-term application support is needed.</p>
+                <p><strong>Koa.js is suitable for:</strong></p>
+                <p>both small and large projects that require development in the future;
+                    for projects with a high degree of customization;
+                    to facilitate long-term application support.</p>
+            </section>
+            <section class="slide14">
+                <h3>That’s all</h3>
+                <p>Thanks</p>
+            </section>
+        </div>
+    </div>
+
+
+    <script src="./reveal.js-master/js/reveal.js"></script>
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            dependencies: [
+                { src: './reveal.js-master/plugin/markdown/marked.js' },
+                { src: './reveal.js-master/plugin/markdown/markdown.js' },
+                { src: './reveal.js-master/plugin/notes/notes.js', async: true },
+                { src: './reveal.js-master/plugin/highlight/highlight.js', async: true }
+            ]
+        });
+    </script>
+</body>
+
+</html>
